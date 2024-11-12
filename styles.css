@@ -1,0 +1,306 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: #FFFFFF;
+    background-color: #0A0A0A;
+}
+
+/* Download Button Styles */
+.download-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+.download-btn {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+.download-btn:active {
+    background-color: #0099FF;
+    color: #FFFFFF;
+    border-color: #0099FF;
+}
+
+/* RG Icon Styles */
+.rg-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: #FFFFFF;
+    color: #0A0A0A;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-right: 8px;
+}
+/* Career Objective Card */
+#career-objective-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.career-card, .profile-card {
+    background-color: #1A1A1A;
+    color: #FFFFFF;
+    border: 2px solid #0099FF;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.career-card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.profile-card {
+    display: none; /* Initially hidden */
+}
+
+.profile-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+/* Icon Buttons */
+.profile-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.icon-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #0099FF;
+    transition: color 0.3s;
+}
+
+.icon-button:hover {
+    color: #1A75FF;
+}
+
+
+/* Header */
+header {
+    text-align: center;
+    padding: 2rem;
+    color: #0099FF;
+}
+header h1 {
+    font-size: 3rem;
+}
+header p {
+    font-size: 1.2rem;
+    color: #1A75FF;
+}
+
+/* Sections */
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+h2 {
+    color: #0099FF;
+    margin-bottom: 1rem;
+}
+
+/* Skills Section */
+#skills {
+    padding: 2rem;
+    text-align: center;
+}
+
+.skills-category {
+    margin-top: 1.5rem;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.skill-card {
+    background-color: #1A1A1A;
+    border: 2px solid #0099FF;
+    border-radius: 10px;
+    padding: 15px;
+    width: 180px;
+    text-align: center;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.skill-card:hover {
+    background-color: #0099FF;
+    transform: scale(1.05);
+}
+
+.skill-card h4 {
+    color: #FFFFFF;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.skill-card ul {
+    list-style: none;
+    padding: 0;
+    color: #CCCCCC;
+}
+
+.skill-card ul li {
+    font-size: 0.9rem;
+    margin: 5px 0;
+    position: relative;
+}
+
+/* Tooltip Styling */
+.tooltip {
+    cursor: pointer;
+    position: relative;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 125%; /* Position above the text */
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+    max-width: 150px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Projects Section */
+#projects {
+    padding: 2rem;
+    text-align: center;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.project-card {
+    background-color: #1A1A1A;
+    border: 2px solid #0099FF;
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;
+    text-align: left;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.project-card:hover {
+    background-color: #0099FF;
+    transform: scale(1.05);
+    color: #FFFFFF;
+}
+
+.project-card h3 {
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    margin-bottom: 0.5rem;
+}
+
+.project-card p {
+    font-size: 0.9rem;
+    color: #CCCCCC;
+    margin: 5px 0;
+}
+
+
+/* Contact Section */
+#contact {
+    padding: 2rem;
+    text-align: center;
+}
+
+.contact-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.contact-card {
+    background-color: #1A1A1A;
+    border: 2px solid #0099FF;
+    border-radius: 10px;
+    padding: 15px;
+    width: 180px;
+    text-align: center;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.contact-card:hover {
+    background-color: #0099FF;
+    transform: scale(1.05);
+}
+
+.contact-link {
+    text-decoration: none;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-icon {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.contact-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+.contact-value {
+    font-size: 0.9rem;
+    color: #CCCCCC;
+}
